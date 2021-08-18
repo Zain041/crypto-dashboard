@@ -18,7 +18,7 @@ function CTA({ text, holdings, address }) {
         <span>{(text !== undefined && text !== '' && (text.substring(0, 2) === '0x')) ? holdings < 10000 ? text + ' - YOU NEED TO HOLD MORE THAN 10K TIKI TO RECEIVE DIVIDENDS' : text : 'Please enter your address above'}</span>
       </div>
       <a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x9b76D1B12Ff738c113200EB043350022EBf12Ff0" target="_blank" rel="noopener noreferrer">
-        Buy TIKI <span dangerouslySetInnerHTML={{ __html: '&RightArrow;' }}></span>
+        Buy Rhino <span dangerouslySetInnerHTML={{ __html: '&RightArrow;' }}></span>
       </a>
     </span>
     </div>
