@@ -188,7 +188,7 @@ function Dashboard(props) {
 
         <Card className="col-span-2 lg:col-span-1">
           <CardBody className="flex flex-col text-center items-center">
-            <img className="w-32 h-32 mb-4 mt-4" src={require('../assets/img/weblaplogo2.png')} />
+            <img className="w-1/2 h-1/2 mb-4 mt-4" src={require('../assets/img/weblaplogo2.png')} />
             <p className="mt-4 font-semibold text-gray-600 dark:text-gray-300 text-3xl text-center">Your {numberWithCommas(holdings)} RHINO Earns:</p><br/>
             <div className="flex">
               <p className="text-green-400 dark:text-green-400 text-2xl text-center"><span className="text-yellow-300">{numberWithCommas(earningsInBnb.toFixed(2))} DOT</span> (${numberWithCommas((earningsInDollars).toFixed(2))})</p><span className="text-gray-600 dark:text-gray-400 text-xl text-center ml-2 mt-2">Per Day</span>
@@ -208,7 +208,7 @@ function Dashboard(props) {
         </Card>
         <Card className="col-span-2 lg:col-span-1">
           <CardBody className="flex flex-col text-center items-center">
-            <img className="w-32 h-32 mb-4 mt-4" src={require('../assets/img/weblaplogo1.png')} />
+            <img className="w-1/2 h-1/2 mb-4 mt-4" src={require('../assets/img/weblaplogo1.png')} />
             <p className="mt-4 font-semibold text-gray-600 dark:text-gray-300 text-3xl text-center">By Reinvesting Dividends Every Day, Your {numberWithCommas(holdings)} RHINO Becomes:</p><br/>
             <div className="flex">
               <p className="text-green-400 dark:text-green-400 text-2xl text-center"><span className="text-yellow-300">{holdings != 0 ? numberWithCommas(compoundedTikiAfterNDays(holdings, 7)) : '0'} RHINO</span> ({holdings != 0 ? (compoundedTikiAfterNDays(holdings, 7)/holdings).toFixed(2) : '0'}x Earnings)</p><span className="text-gray-600 dark:text-gray-400 text-xl text-center ml-2 mt-1">In a Week</span>
