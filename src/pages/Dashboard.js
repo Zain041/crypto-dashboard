@@ -64,7 +64,7 @@ function Dashboard(props) {
             <div>
               <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Total DOT Paid</p>
               
-              <p className="text-lg font-semibold text-gray-700 dark:text-gray-200"><span className="text-yellow-300">{`${(paid / 1e18).toFixed(4)}`}</span><span className="italic font-light text-md text-green-400"> ~${numberWithCommas(((paid / 1e18)*bnbPrice).toFixed(2))}</span></p>
+              <p className="text-lg font-semibold text-gray-700 dark:text-gray-200"><span className="text-yellow-300">{`${(paid / 1e18).toFixed(4)}`}</span><span className="italic font-light text-md text-black-400 dark:text-green-400"> ~${numberWithCommas(((paid / 1e18)*bnbPrice).toFixed(2))}</span></p>
             </div>
           </CardBody>
         </Card>
@@ -174,8 +174,8 @@ function Dashboard(props) {
         <Card className="col-span-2">
           <CardBody className="flex flex-col text-center items-center">
             <img className="w-32 h-32 mb-4 mt-4" src={require('../assets/img/p.png')} />
-            <p className="mt-4 font-semibold text-gray-600 dark:text-gray-300 text-3xl text-center">Total polkadot paid to Rinho holders</p><br/>
-            <p className="text-green-400 dark:text-green-400 text-4xl md:text-6xl text-center mb-8">00,000 <span className="text-pink-300"> Polkadot</span><br/> = $0,000,000</p>
+            <p className="mt-4 font-semibold text-gray-600 dark:text-gray-300 text-3xl text-center">Total Polkadot paid to Rhino holders</p><br/>
+            <p className="text-black-400 dark:text-green-400 text-4xl md:text-6xl text-center mb-8">00,000 <span className="text-pink-600"> Polkadot</span><br/> = $0,000,000</p>
             {/* {numberWithCommas((bnbPrice*totalPaid).toFixed(0))} {numberWithCommas(totalPaid)} */}
           </CardBody>
         </Card>
@@ -188,7 +188,7 @@ function Dashboard(props) {
 
         <Card className="col-span-2 lg:col-span-1">
           <CardBody className="flex flex-col text-center items-center">
-            <img className="w-32 h-32 mb-4 mt-4" src={require('../assets/img/money.png')} />
+            <img className="w-32 h-32 mb-4 mt-4" src={require('../assets/img/weblaplogo2.png')} />
             <p className="mt-4 font-semibold text-gray-600 dark:text-gray-300 text-3xl text-center">Your {numberWithCommas(holdings)} RHINO Earns:</p><br/>
             <div className="flex">
               <p className="text-green-400 dark:text-green-400 text-2xl text-center"><span className="text-yellow-300">{numberWithCommas(earningsInBnb.toFixed(2))} DOT</span> (${numberWithCommas((earningsInDollars).toFixed(2))})</p><span className="text-gray-600 dark:text-gray-400 text-xl text-center ml-2 mt-2">Per Day</span>
@@ -203,12 +203,12 @@ function Dashboard(props) {
               <p className="text-green-400 dark:text-green-400 text-2xl text-center"><span className="text-yellow-300">{numberWithCommas((earningsInBnb*365).toFixed(2))} DOT</span> (${numberWithCommas((earningsInDollars*365).toFixed(2))})</p><span className="text-gray-600 dark:text-gray-400 text-xl text-center ml-2 mt-2">Per Year</span>
             </div>
             <br/>
-            <p className="text-gray-600 dark:text-gray-400 text-xl text-center -mt-2">Dynamic estimations based on trading volume of ${numberWithCommas(tikiVolume.toFixed(0))}</p>
+            <p className="text-gray-600 dark:text-gray-400 text-xl text-center -mt-2">Dynamic estimations based on trading volume of $00,000</p>
           </CardBody>
         </Card>
         <Card className="col-span-2 lg:col-span-1">
           <CardBody className="flex flex-col text-center items-center">
-            <img className="w-32 h-32 mb-4 mt-4" src={require('../assets/img/money.png')} />
+            <img className="w-32 h-32 mb-4 mt-4" src={require('../assets/img/weblaplogo1.png')} />
             <p className="mt-4 font-semibold text-gray-600 dark:text-gray-300 text-3xl text-center">By Reinvesting Dividends Every Day, Your {numberWithCommas(holdings)} RHINO Becomes:</p><br/>
             <div className="flex">
               <p className="text-green-400 dark:text-green-400 text-2xl text-center"><span className="text-yellow-300">{holdings != 0 ? numberWithCommas(compoundedTikiAfterNDays(holdings, 7)) : '0'} RHINO</span> ({holdings != 0 ? (compoundedTikiAfterNDays(holdings, 7)/holdings).toFixed(2) : '0'}x Earnings)</p><span className="text-gray-600 dark:text-gray-400 text-xl text-center ml-2 mt-1">In a Week</span>
@@ -223,7 +223,7 @@ function Dashboard(props) {
               <p className="text-green-400 dark:text-green-400 text-2xl text-center"><span className="text-yellow-300">{holdings != 0 ? numberWithCommas(compoundedTikiAfterNDays(holdings, 365)) : '0'} RHINO</span> ({holdings != 0 ? (compoundedTikiAfterNDays(holdings, 365)/holdings).toFixed(2) : '0'}x Earnings)</p><span className="text-gray-600 dark:text-gray-400 text-xl text-center ml-2 mt-1">In 1 Year</span>
             </div>
             <br/>
-            <p className="text-gray-600 dark:text-gray-400 text-xl text-center -mt-2">Estimations are based on current $RHINO price (${tikiPrice.toFixed(4)})</p>
+            <p className="text-gray-600 dark:text-gray-400 text-xl text-center -mt-2">Estimations are based on current $RHINO price 0.0000</p>
           </CardBody>
         </Card>
       </div>

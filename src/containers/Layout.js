@@ -46,7 +46,7 @@ function Layout(props) {
             </Switch>
           </Suspense> : 
           <div className="w-full h-full flex justify-center">
-            <img src='https://uploads-ssl.webflow.com/60c7783699e1051d74062f79/60c9ca23cfdaec309091e4b0_Logo---Animation--05.gif' className="w-1/4 h-1/3 mt-48 inline-block align-middle"/>
+            <img src={require('../assets/img/p.png')} className="w-1/4 h-1/3 mt-48 inline-block align-middle"/>
           </div>}
         </Main>
       </div>
