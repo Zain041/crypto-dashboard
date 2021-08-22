@@ -45,22 +45,24 @@ function Dashboard(props) {
 
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
         <InfoCard title="Your Rhino Holdings" value={`${numberWithCommas(holdings)} RHINO`}>
-          <RoundIcon
+          <img className="w-1/3 h-1/3" src={require('../assets/img/1.svg')}/>
+          {/* <RoundIcon
             icon={CoinsIcon}
             iconColorClass="text-orange-500 dark:text-orange-100"
             bgColorClass="bg-orange-100 dark:bg-orange-500"
             className="mr-4"
-          />
+          /> */}
         </InfoCard>
         
         <Card>
           <CardBody className="flex items-center">
-            <RoundIcon
+          <img className="w-1/3 h-1/3" src={require('../assets/img/2.svg')}/>
+            {/* <RoundIcon
               icon={PeopleIcon}
               iconColorClass="text-green-500 dark:text-green-100"
               bgColorClass="bg-green-100 dark:bg-green-500"
               className="mr-4"
-            />
+            /> */}
             <div>
               <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Total DOT Paid</p>
               
@@ -70,22 +72,25 @@ function Dashboard(props) {
         </Card>
 
         <InfoCard className="" title="Last Payout Time" value={`${lastPaid === 0 ? 'Never' : TimeDifference(Date.now(), lastPaid)}`}>
-            <RoundIcon
+            {/* <RoundIcon
               icon={MoneyIcon}
               iconColorClass="text-blue-500 dark:text-blue-100"
               bgColorClass="bg-blue-100 dark:bg-blue-500"
               className="mr-4"
-            />
+            /> */}
+
+<img className="w-1/3 h-1/3" src={require('../assets/img/3.svg')}/>
         </InfoCard>
         
         <Card>
           <CardBody className="flex items-center">
-            <RoundIcon
+            {/* <RoundIcon
               icon={CartIcon}
               iconColorClass="text-yellow-500 dark:text-yellow-100"
               bgColorClass="bg-yellow-100 dark:bg-yellow-500"
               className="mr-4"
-            />
+            /> */}
+             <img className="w-1/3 h-1/3" src={require('../assets/img/4.svg')}/>
             <div>
               <p className="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400">Payout Loading</p>
               
@@ -182,7 +187,7 @@ function Dashboard(props) {
 
         <Card className="col-span-2">
           <CardBody className="flex flex-col text-center items-center">
-            <p className="text-gray-600 dark:text-gray-400 text-xl text-center -mt-2">Estimations are based on a default of the last 24h of trading volume<br/>Change the volume to predict earnings based on other volume figures<br/>Trading Volume = $ <input className="text-black" value={numberWithCommas(tikiVolume.toFixed(0))} onChange={e => isNaN(Number(parseFloat(e.target.value.replace(/,/g, '')))) ? tikiVolume : setTikiVolume(Number(parseFloat(e.target.value.replace(/,/g, ''))))} /></p>
+            <p className="text-gray-600 dark:text-gray-400 text-xl text-center -mt-2">Estimations are based on a default of the last 24h of trading volume<br/>Change the volume to predict earnings based on other volume figures<br/>Trading Volume = $ <input className="text-black" value={"00,000"} onChange={e => isNaN(Number(parseFloat(e.target.value.replace(/,/g, '')))) ? tikiVolume : setTikiVolume(Number(parseFloat(e.target.value.replace(/,/g, ''))))} /></p>
           </CardBody>
         </Card>
 
