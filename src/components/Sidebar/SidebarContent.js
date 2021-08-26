@@ -39,6 +39,63 @@ function SidebarContent() {
             </li>)
           )
           })}
+          <li className="relative px-6 py-3 my-1">
+          <a
+                
+                href="https://twitter.com/polkarhino"
+                target="_blank"
+                className="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                activeClassName="text-gray-800 dark:text-gray-100"
+              >
+               
+                  <span
+                    className="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                    aria-hidden="true"
+                  ></span>
+              
+              <i class=" transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200  w-5 pt-1 pl-1 h-5  fab fa-twitter"></i>
+                <span className="ml-4">Twitter</span>
+              </a>
+
+          </li>
+          <li className="relative px-6 py-3 my-1">
+          <a
+                
+                href="https://t.me/rhinobsc"
+                target="_blank"
+                className="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                activeClassName="text-gray-800 dark:text-gray-100"
+              >
+               
+                  <span
+                    className="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                    aria-hidden="true"
+                  ></span>
+              
+              <i class=" transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200  w-5 pt-1 pl-1 h-5  fab fa-telegram-plane"></i>
+                <span className="ml-4">Telegram</span>
+              </a>
+
+          </li>
+          <li className="relative px-6 py-3 my-1">
+          <a
+                
+                href="https://rhinobsc.com/"
+                target="_blank"
+                className="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                activeClassName="text-gray-800 dark:text-gray-100"
+              >
+               
+                  <span
+                    className="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                    aria-hidden="true"
+                  ></span>
+              
+              <img  src={require('../../assets/img/m.png')} class=" transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200  w-6 pt-1 pl-1 h-6  "/>
+                <span className="ml-4">Website</span>
+              </a>
+
+          </li>
       </ul>
     </div>
   )
