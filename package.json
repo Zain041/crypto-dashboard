@@ -2,7 +2,7 @@
   "name": "tikitoken",
   "homepage": "http://tikitoken.github.io",
   "version": "1.0.0",
-  "description": "Hold Rhino, Earn Free DOT",
+  "description": "Hold Rhino, Earn  DOT",
   "private": true,
   "scripts": {
     "tailwind:dev": "tailwindcss build src/assets/css/tailwind.css -o src/assets/css/tailwind.output.css",
