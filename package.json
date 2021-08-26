@@ -51,10 +51,8 @@
     "tailwindcss": "1.4.6"
   },
   "keywords": [
-    "tiki",
-    "token",
-    "tikitoken",
-    "bnb"
+    "rhino"
+    
   ],
   "release-it": {
     "github": {
